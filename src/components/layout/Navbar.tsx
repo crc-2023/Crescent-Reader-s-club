@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Moon, Sun, BookOpen } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useTheme } from 'next-themes';
-
+import crcLogo from '@/assets/logo.png';
 const navigation = [
   { name: 'Home', href: '/' },
   { name: 'About Us', href: '/about' },
@@ -40,7 +40,11 @@ export default function Navbar() {
           {/* Logo */}
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-2 group">
-              <BookOpen className="h-8 w-8 text-secondary transition-smooth group-hover:scale-110" />
+             <img 
+                src={crcLogo} 
+                alt="Crescent Readers Club Logo" 
+                className="h-20 w-20 object-contain transition-smooth group-hover:scale-110" 
+              />
               <span className="text-xl font-bold text-foreground">
                 Crescent Readers Club
               </span>

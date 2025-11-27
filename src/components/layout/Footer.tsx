@@ -1,5 +1,5 @@
 import { Mail, Linkedin, Twitter, Instagram, BookOpen } from 'lucide-react';
-
+import crcLogo from '@/assets/logo.png';
 const socialLinks = [
   {
     name: 'Email',
@@ -34,7 +34,11 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Brand Section */}
           <div className="flex items-center gap-3">
-            <BookOpen className="h-8 w-8 text-primary" />
+            <img 
+                src={crcLogo} 
+                alt="Crescent Readers Club Logo" 
+                className="h-20 w-20 object-contain transition-smooth group-hover:scale-110" 
+              />
             <div>
               <h3 className="font-bold text-lg text-foreground">Crescent Readers Club</h3>
               <p className="text-sm text-muted-foreground">Cultivating minds through literature</p>

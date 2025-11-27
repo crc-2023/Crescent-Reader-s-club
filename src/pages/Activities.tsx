@@ -119,6 +119,7 @@ export const cresPulse = [
         id: 14,
         title: "August 3 Edition",
         date: "2024-08-03",
+        image: "src/assets/Activities/CresPulse/3aug.png",
         document: "src/assets/Activities/CresPulse/aug_03.pdf",
         category: "Newsletter",
         description:
@@ -128,6 +129,7 @@ export const cresPulse = [
         id: 15,
         title: "August 10 Edition",
         date: "2024-08-10",
+        image: "src/assets/Activities/CresPulse/10aug.png",
         document: "src/assets/Activities/CresPulse/aug_10.pdf",
         category: "Newsletter",
         description:
@@ -137,6 +139,7 @@ export const cresPulse = [
         id: 16,
         title: "August 17 Edition",
         date: "2024-08-17",
+        image: "src/assets/Activities/CresPulse/17aug.png",
         document: "src/assets/Activities/CresPulse/aug_17.pdf",
         category: "Newsletter",
         description:
@@ -146,6 +149,7 @@ export const cresPulse = [
         id: 17,
         title: "August 24 Edition",
         date: "2024-08-24",
+        image: "src/assets/Activities/CresPulse/24aug2.png",
         document: "src/assets/Activities/CresPulse/aug_24.pdf",
         category: "Newsletter",
         description:
@@ -155,6 +159,7 @@ export const cresPulse = [
         id: 18,
         title: "August 31 Edition",
         date: "2024-08-31",
+        image: "src/assets/Activities/CresPulse/31aug2.png",
         document: "src/assets/Activities/CresPulse/aug_31.pdf",
         category: "Newsletter",
         description:
@@ -164,6 +169,7 @@ export const cresPulse = [
         id: 19,
         title: "September 7 Edition",
         date: "2024-09-07",
+        image: "src/assets/Activities/CresPulse/7sep.png",
         document: "src/assets/Activities/CresPulse/sep_07.pdf", // PDF document
         category: "Newsletter",
         description:
@@ -173,6 +179,7 @@ export const cresPulse = [
         id: 20,
         title: "September 14 Edition",
         date: "2024-09-14",
+        image: "src/assets/Activities/CresPulse/14sep.png",
         document: "src/assets/Activities/CresPulse/sep_14.pdf",
         category: "Newsletter",
         description:
@@ -191,10 +198,19 @@ const categoryColors: Record<string, string> = {
     Podcast: "from-cyan-500 to-blue-600",
     Newsletter: "from-purple-500 to-indigo-600",
 };
-
+// Define what an Activity Item looks like
+interface ActivityItem {
+  id: number;
+  title: string;
+  image: string;
+  category: string;
+  description: string;
+  document?: string; // The '?' means this is OPTIONAL
+  date?: string;     // The '?' means this is OPTIONAL
+}
 // ================== COMPONENT ================== //
 export default function Activities() {
-    const allItems = [...cresTales, ...cresPods, ...cresPulse];
+    const allItems:ActivityItem[] = [...cresTales, ...cresPods, ...cresPulse];
     const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
 
     const selectedItem = selectedIndex !== null ? allItems[selectedIndex] : null;
@@ -294,8 +310,27 @@ export default function Activities() {
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
                         {cresPods.map(renderCard)}
+                        <a
+        href="https://open.spotify.com/episode/7lvvgXjbminT2G5ZvvpuLx?si=ad72d074535043bb"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bg-white hover:bg-grey-50 rounded-2xl shadow-soft border border-border/50 card-hover cursor-pointer flex flex-col items-center justify-center p-6 text-[#1DB954] transition-all group"
+        style={{ minHeight: '320px' }} // Ensures it's the same height as other cards
+    >
+        <div className="bg-green-100 p-5 rounded-full mb-4 group-hover:bg-green-200 transition-colors">
+            <svg 
+                xmlns="http://www.w3.org/2000/svg" 
+                width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"
+            >
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+            </svg>
+        </div>
+        <h3 className="text-xl font-bold">View More on Spotify</h3>
+    </a>
                     </div>
-                    {/* Spotify Button */}
+                    
+                    {/* Spotify Button 
                     <div className="mt-8 flex justify-center">
                         <a
                             href="https://open.spotify.com/episode/7lvvgXjbminT2G5ZvvpuLx?si=ad72d074535043bb" // Replace with your actual Spotify link
@@ -305,7 +340,7 @@ export default function Activities() {
                         >
                             Go to Spotify
                         </a>
-                    </div>
+                    </div>*/}
                 </div>
             </section>
 

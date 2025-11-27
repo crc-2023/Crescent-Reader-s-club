@@ -148,9 +148,18 @@ export default function Team() {
         >
           Be part of Crescent Readers Club and help us shape unforgettable literary experiences.
         </motion.p>
-        <Button className="px-8 py-4 bg-purple-500 text-white rounded-xl shadow-lg hover:scale-105 transition">
-          Become a Member
-        </Button>
+       <Button 
+  asChild 
+  className="px-8 py-4 bg-purple-500 text-white rounded-xl shadow-lg hover:scale-105 transition"
+>
+  <a 
+    href="https://forms.gle/CZnhUrLXpedTba5T6" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    Become a Member
+  </a>
+</Button>
       </section>
     </div>
   );

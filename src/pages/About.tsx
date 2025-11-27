@@ -7,7 +7,7 @@ const timeline = [
   { year: '2023', title: 'Club Foundation', description: 'Started as a passionate circle of readers exploring classics and modern works.' },
   { year: '2023', title: 'Community Growth', description: 'Welcomed diverse members and expanded genres across cultures and themes.' },
   { year: '2023', title: 'Digital Presence', description: 'Launched podcast, online forums, and virtual book discussions reaching global audiences.' },
-  { year: '2024', title: 'CresPulse Launch', description: 'Introduced our blog and newsletter, spotlighting reviews, author interviews, and insights.' },
+  { year: '2023', title: 'CresPulse Launch', description: 'Introduced our blog and newsletter, spotlighting reviews, author interviews, and insights.' },
   { year: '2025', title: 'Community Impact', description: 'Crossed 150+ active members, partnered with libraries, and initiated social reading campaigns.' },
 ];
 
@@ -22,9 +22,9 @@ const objectives = [
 
 const stats = [
   { number: '150+', label: 'Active Members' },
-  { number: '50+', label: 'Events Hosted' },
+  { number: '15+', label: 'Events Hosted' },
   { number: '20+', label: 'Library Partnerships' },
-  { number: '1000+', label: 'Books Discussed' },
+  { number: '10+', label: 'Books Discussed' },
 ];
 
 export default function About() {
@@ -229,9 +229,18 @@ export default function About() {
         >
           Join Crescent Readers Club and embark on a lifelong literary adventure. Your next favorite story—and friends—await.
         </motion.p>
-        <Button className="px-8 py-4 bg-purple-500 text-white rounded-xl shadow-lg hover:scale-105 transition">
-          Become a Member
-        </Button>
+        <Button 
+  asChild 
+  className="px-8 py-4 bg-purple-500 text-white rounded-xl shadow-lg hover:scale-105 transition"
+>
+  <a 
+    href="https://forms.gle/CZnhUrLXpedTba5T6" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    Become a Member
+  </a>
+</Button>
       </section>
     </div>
   );

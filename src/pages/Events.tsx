@@ -159,10 +159,10 @@ export default function Events() {
                         }}
                       />
                     </div>
-                    <Button className="bg-secondary text-secondary-foreground hover:bg-secondary/90 transition-smooth">
+                  {/*  <Button className="bg-secondary text-secondary-foreground hover:bg-secondary/90 transition-smooth">
                       Register
                       <ExternalLink className="ml-2 h-4 w-4" />
-                    </Button>
+                    </Button>*/}
                   </div>
                 </div>
               </div>

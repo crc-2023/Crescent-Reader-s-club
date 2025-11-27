@@ -120,28 +120,15 @@ export default function Events() {
                     <div className="flex items-center">
                       <Calendar className="h-4 w-4 mr-2 text-secondary" />
                       <span>
-                        {new Date(event.date).toLocaleDateString("en-US", {
-                          weekday: "long",
-                          year: "numeric",
-                          month: "long",
-                          day: "numeric",
-                        })}
+                       Date & Time: Coming Soon
                       </span>
                     </div>
-                    <div className="flex items-center">
-                      <Clock className="h-4 w-4 mr-2 text-secondary" />
-                      <span>{event.time}</span>
-                    </div>
+                    
                     <div className="flex items-center">
                       <MapPin className="h-4 w-4 mr-2 text-secondary" />
                       <span>{event.location}</span>
                     </div>
-                    <div className="flex items-center">
-                      <Users className="h-4 w-4 mr-2 text-secondary" />
-                      <span>
-                        {event.attendees}/{event.maxAttendees} attending
-                      </span>
-                    </div>
+                    
                   </div>
 
                   <p className="text-muted-foreground mb-6 leading-relaxed">

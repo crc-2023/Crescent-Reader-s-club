@@ -14,12 +14,6 @@ const socialLinks = [
     label: 'Follow us on LinkedIn'
   },
   {
-    name: 'Twitter',
-    icon: Twitter,
-    href: 'https://twitter.com/crescentreaders',
-    label: 'Follow us on Twitter'
-  },
-  {
     name: 'Instagram',
     icon: Instagram,
     href: 'https://instagram.com/crescentreadersclub',

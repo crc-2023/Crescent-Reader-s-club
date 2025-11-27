@@ -3,12 +3,47 @@ import { Calendar, BookOpen, Mic, Newspaper, X, ChevronLeft, ChevronRight, Downl
 import ImmersiveBackground from "@/components/ui/immersive-background";
 import { motion, AnimatePresence } from "framer-motion";
 
+// CresTales Images
+import aiPhotoImg from "@/assets/Activities/CresTales/ai_phtsyn.jpg";
+import bookReviewImg from "@/assets/Activities/CresTales/book_review.jpg";
+import independenceImg from "@/assets/Activities/CresTales/cele_indp_days.jpg";
+import cscImg from "@/assets/Activities/CresTales/csc.jpg";
+import daysWordsImg from "@/assets/Activities/CresTales/days_words.jpg";
+import detectiveFilesImg from "@/assets/Activities/CresTales/detective_files.jpg";
+import detectiveUncoverImg from "@/assets/Activities/CresTales/detective_uncover.jpg";
+import iplImg from "@/assets/Activities/CresTales/ipl.jpg";
+
+// CresPods Images
+import aiPodImg from "@/assets/Activities/CresPods/ai.jpg";
+import fiveResumeImg from "@/assets/Activities/CresPods/five_resume.jpg";
+import freedomImg from "@/assets/Activities/CresPods/freedom.jpg";
+import friendsImg from "@/assets/Activities/CresPods/frnds.jpg";
+import independencePodImg from "@/assets/Activities/CresPods/hpy_ind_day.jpg";
+
+// CresPulse Images (Thumbnails)
+import pulseAug3Img from "@/assets/Activities/CresPulse/3aug.png";
+import pulseAug10Img from "@/assets/Activities/CresPulse/10aug.png";
+import pulseAug17Img from "@/assets/Activities/CresPulse/17aug.png";
+import pulseAug24Img from "@/assets/Activities/CresPulse/24aug2.png";
+import pulseAug31Img from "@/assets/Activities/CresPulse/31aug2.png";
+import pulseSep7Img from "@/assets/Activities/CresPulse/7sep.png";
+import pulseSep14Img from "@/assets/Activities/CresPulse/14sep.png";
+
+// CresPulse Documents (PDFs)
+import pulseAug3Pdf from "@/assets/Activities/CresPulse/aug_03.pdf";
+import pulseAug10Pdf from "@/assets/Activities/CresPulse/aug_10.pdf";
+import pulseAug17Pdf from "@/assets/Activities/CresPulse/aug_17.pdf";
+import pulseAug24Pdf from "@/assets/Activities/CresPulse/aug_24.pdf";
+import pulseAug31Pdf from "@/assets/Activities/CresPulse/aug_31.pdf";
+import pulseSep7Pdf from "@/assets/Activities/CresPulse/sep_07.pdf";
+import pulseSep14Pdf from "@/assets/Activities/CresPulse/sep_14.pdf";
+
 // ================== DATA ================== //
 export const cresTales = [
     {
         id: 1,
         title: "AI Photo Synthesis",
-        image: "src/assets/Activities/CresTales/ai_phtsyn.jpg",
+        image: aiPhotoImg,
         category: "Story",
         description:
             "A creative experiment where members generated AI-driven visuals paired with short narratives, blending technology with imagination.",
@@ -16,7 +51,7 @@ export const cresTales = [
     {
         id: 2,
         title: "Book Review",
-        image: "src/assets/Activities/CresTales/book_review.jpg",
+        image: bookReviewImg,
         category: "Review",
         description:
             "Our members share insightful reviews of books, highlighting key lessons, favorite quotes, and personal takeaways.",
@@ -24,7 +59,7 @@ export const cresTales = [
     {
         id: 3,
         title: "Independence Day Special",
-        image: "src/assets/Activities/CresTales/cele_indp_days.jpg",
+        image: independenceImg,
         category: "Special",
         description:
             "Celebrating India's Independence Day with stories, reflections, and creative content from our club writers.",
@@ -32,7 +67,7 @@ export const cresTales = [
     {
         id: 4,
         title: "Creative Short Content",
-        image: "src/assets/Activities/CresTales/csc.jpg",
+        image: cscImg,
         category: "Story",
         description:
             "Bite-sized creative pieces including microfiction, one-liners, and thought-provoking short content.",
@@ -40,7 +75,7 @@ export const cresTales = [
     {
         id: 5,
         title: "Days in Words",
-        image: "src/assets/Activities/CresTales/days_words.jpg",
+        image: daysWordsImg,
         category: "Poetry",
         description:
             "Poetry that captures everyday life, emotions, and reflections of our members in lyrical form.",
@@ -48,7 +83,7 @@ export const cresTales = [
     {
         id: 6,
         title: "Detective Files",
-        image: "src/assets/Activities/CresTales/detective_files.jpg",
+        image: detectiveFilesImg,
         category: "Mystery",
         description:
             "Engaging mystery stories where members play the role of detectives, solving imaginative cases.",
@@ -56,7 +91,7 @@ export const cresTales = [
     {
         id: 7,
         title: "Detective Uncovered",
-        image: "src/assets/Activities/CresTales/detective_uncover.jpg",
+        image: detectiveUncoverImg,
         category: "Mystery",
         description:
             "Behind-the-scenes analysis of popular detective tales and fictional mysteries with club discussions.",
@@ -64,7 +99,7 @@ export const cresTales = [
     {
         id: 8,
         title: "IPL Insights",
-        image: "src/assets/Activities/CresTales/ipl.jpg",
+        image: iplImg,
         category: "Sports",
         description:
             "Weekly insights and commentaries on IPL matches, blending sports enthusiasm with analytical writing.",
@@ -75,7 +110,7 @@ export const cresPods = [
     {
         id: 9,
         title: "AI Podcast",
-        image: "src/assets/Activities/CresPods/ai.jpg",
+        image: aiPodImg,
         category: "Podcast",
         description:
             "A podcast exploring the future of Artificial Intelligence, its opportunities, challenges, and impact on society.",
@@ -83,7 +118,7 @@ export const cresPods = [
     {
         id: 10,
         title: "Five Resume Tips",
-        image: "src/assets/Activities/CresPods/five_resume.jpg",
+        image: fiveResumeImg,
         category: "Podcast",
         description:
             "Actionable resume-building tips shared by experts to help students and professionals shine in job applications.",
@@ -91,7 +126,7 @@ export const cresPods = [
     {
         id: 11,
         title: "Freedom Talk",
-        image: "src/assets/Activities/CresPods/freedom.jpg",
+        image: freedomImg,
         category: "Podcast",
         description:
             "An engaging discussion on the meaning of freedom, democracy, and the responsibilities it brings.",
@@ -99,7 +134,7 @@ export const cresPods = [
     {
         id: 12,
         title: "Friends Forever",
-        image: "src/assets/Activities/CresPods/frnds.jpg",
+        image: friendsImg,
         category: "Podcast",
         description:
             "A light-hearted talk on friendship, shared memories, and the importance of human connection.",
@@ -107,7 +142,7 @@ export const cresPods = [
     {
         id: 13,
         title: "Independence Day Special",
-        image: "src/assets/Activities/CresPods/hpy_ind_day.jpg",
+        image: independencePodImg,
         category: "Podcast",
         description:
             "Special Independence Day podcast featuring patriotic stories, interviews, and cultural reflections.",
@@ -119,8 +154,8 @@ export const cresPulse = [
         id: 14,
         title: "August 3 Edition",
         date: "2024-08-03",
-        image: "src/assets/Activities/CresPulse/3aug.png",
-        document: "src/assets/Activities/CresPulse/aug_03.pdf",
+        image: pulseAug3Img,
+        document: pulseAug3Pdf,
         category: "Newsletter",
         description:
             "CresPulse launch edition, highlighting upcoming events, new initiatives, and club announcements.",
@@ -129,8 +164,8 @@ export const cresPulse = [
         id: 15,
         title: "August 10 Edition",
         date: "2024-08-10",
-        image: "src/assets/Activities/CresPulse/10aug.png",
-        document: "src/assets/Activities/CresPulse/aug_10.pdf",
+        image: pulseAug10Img,
+        document: pulseAug10Pdf,
         category: "Newsletter",
         description:
             "Coverage of cultural activities, storytelling highlights, and featured student writers.",
@@ -139,8 +174,8 @@ export const cresPulse = [
         id: 16,
         title: "August 17 Edition",
         date: "2024-08-17",
-        image: "src/assets/Activities/CresPulse/17aug.png",
-        document: "src/assets/Activities/CresPulse/aug_17.pdf",
+        image: pulseAug17Img,
+        document: pulseAug17Pdf,
         category: "Newsletter",
         description:
             "Special Independence week issue packed with patriotic stories, poems, and artwork.",
@@ -149,8 +184,8 @@ export const cresPulse = [
         id: 17,
         title: "August 24 Edition",
         date: "2024-08-24",
-        image: "src/assets/Activities/CresPulse/24aug2.png",
-        document: "src/assets/Activities/CresPulse/aug_24.pdf",
+        image: pulseAug24Img,
+        document: pulseAug24Pdf,
         category: "Newsletter",
         description:
             "Spotlight on CresPods and CresTales contributors with behind-the-scenes club updates.",
@@ -159,8 +194,8 @@ export const cresPulse = [
         id: 18,
         title: "August 31 Edition",
         date: "2024-08-31",
-        image: "src/assets/Activities/CresPulse/31aug2.png",
-        document: "src/assets/Activities/CresPulse/aug_31.pdf",
+        image: pulseAug31Img,
+        document: pulseAug31Pdf,
         category: "Newsletter",
         description:
             "Monthly recap featuring top stories, event coverage, and future plans.",
@@ -169,8 +204,8 @@ export const cresPulse = [
         id: 19,
         title: "September 7 Edition",
         date: "2024-09-07",
-        image: "src/assets/Activities/CresPulse/7sep.png",
-        document: "src/assets/Activities/CresPulse/sep_07.pdf", // PDF document
+        image: pulseSep7Img,
+        document: pulseSep7Pdf, // PDF document
         category: "Newsletter",
         description:
             "Highlighting CresClub’s involvement in cultural activities and sports analysis.",
@@ -179,8 +214,8 @@ export const cresPulse = [
         id: 20,
         title: "September 14 Edition",
         date: "2024-09-14",
-        image: "src/assets/Activities/CresPulse/14sep.png",
-        document: "src/assets/Activities/CresPulse/sep_14.pdf",
+        image: pulseSep14Img,
+        document: pulseSep14Pdf,
         category: "Newsletter",
         description:
             "Exploring creativity through CresTales and engaging club member interviews.",

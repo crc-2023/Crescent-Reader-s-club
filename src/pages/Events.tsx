@@ -148,22 +148,7 @@ export default function Events() {
                     {event.description}
                   </p>
 
-                  <div className="flex items-center justify-between">
-                    <div className="w-full bg-muted rounded-full h-2 mr-4">
-                      <div
-                        className="bg-secondary h-2 rounded-full transition-all duration-500"
-                        style={{
-                          width: `${
-                            (event.attendees / event.maxAttendees) * 100
-                          }%`,
-                        }}
-                      />
-                    </div>
-                  {/*  <Button className="bg-secondary text-secondary-foreground hover:bg-secondary/90 transition-smooth">
-                      Register
-                      <ExternalLink className="ml-2 h-4 w-4" />
-                    </Button>*/}
-                  </div>
+                  
                 </div>
               </div>
             ))}
